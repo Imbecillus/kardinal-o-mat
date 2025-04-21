@@ -34,6 +34,10 @@ export const calculateSimilarityScore = (userAnswers: Answer[], cardinalId: Card
 
   }
 
+  if (!evaluatedQuestions) {
+    return 0;
+  }
+
   const maxDistance = evaluatedQuestions * 2;
 
   return 1 - distance / maxDistance;
