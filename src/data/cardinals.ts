@@ -101,8 +101,8 @@ const CARDINALS: Array<Cardinal> = [
     answers: [-1, undefined, -1, -1, undefined, undefined, undefined, undefined, undefined, undefined]
   },
   {
-    id: 'pizzabella',
-    name: 'Pierbattista Pizzabella',
+    id: 'pizzaballa',
+    name: 'Pierbattista Pizzaballa',
     position: 'Lateinischer Patriarch von Jerusalem',
     answers: [-1, undefined, undefined, -1, undefined, 0, 0, undefined, undefined, 1]
   },
