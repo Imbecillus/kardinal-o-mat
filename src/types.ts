@@ -1,0 +1,1 @@
+export type Answer = -1 | 0 | 1 | undefined;

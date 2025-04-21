@@ -1,13 +1,17 @@
 <script lang="ts">
+    import type { Answer } from "../types";
+
   type Props = {
     index: number;
     total: number;
 
     heading: string;
     thesis: string;
+
+    onAnswer: (value: Answer) => void;
   }
 
-  const { index, total, heading, thesis }: Props = $props();
+  const { index, total, heading, thesis, onAnswer }: Props = $props();
 </script>
 
 <div class="question">
@@ -19,11 +23,11 @@
     {thesis}
   </p>
   <div class="answers">
-    <button>stimme zu</button>
-    <button>neutral</button>
-    <button>stimme nicht zu</button>
+    <button onclick={() => { onAnswer(1) }}>stimme zu</button>
+    <button onclick={() => { onAnswer(0) }}>neutral</button>
+    <button onclick={() => { onAnswer(-1) }}>stimme nicht zu</button>
   </div>
-  <button class="skip-thesis">These überspringen</button>
+  <button onclick={() => { onAnswer(undefined) }} class="skip-thesis">These überspringen</button>
 </div>
 
 <style lang="css">
@@ -35,6 +39,8 @@
     padding: 10px 55px 10px 55px;
 
     text-align: left;
+
+    width: 100%;
 
     h3 {
       margin: 0;
