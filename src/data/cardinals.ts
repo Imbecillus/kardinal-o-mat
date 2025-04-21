@@ -43,7 +43,7 @@ const CARDINALS: Array<Cardinal> = [
   {
     id: 'brislin',
     name: 'Stephen Brislin',
-    position: 'Erzbischof von Johannisburg, Südafrika',
+    position: 'Erzbischof von Johannesburg, Südafrika',
     answers: [1, 0, 1, undefined, undefined, 1, 1, 0, 1, undefined]
   },
   {
