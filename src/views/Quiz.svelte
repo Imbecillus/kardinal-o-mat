@@ -1,9 +1,14 @@
 <script lang="ts">
 
   import Question from "../lib/Question.svelte";
-
   import { THESES } from "../data/theses";
-    import type { Answer } from "../types";
+  import type { Answer } from "../types";
+
+  type Props = {
+    onFinished: (answers: Answer[]) => void;
+  }
+
+  const { onFinished }: Props = $props();
 
   const total = THESES.length;
   let index = $state(0);
@@ -21,7 +26,7 @@
     if (index < ANSWERS.length - 1) {
       index++
     } else {
-      // TODO: Results
+      onFinished(ANSWERS);
     }
   }
 
