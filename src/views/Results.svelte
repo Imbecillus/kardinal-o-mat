@@ -16,8 +16,6 @@
     cardinalScores.set(cardinal, calculateSimilarityScore(userAnswers, cardinal));
   }
 
-  console.log(cardinalScores);
-
   const sortedCardinals = Array.from(CARDINAL_MAP.keys()).sort(
     (a: CardinalId, b: CardinalId) => (cardinalScores.get(b) ?? 0) - (cardinalScores.get(a) ?? 0)
   );

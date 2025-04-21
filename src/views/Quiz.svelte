@@ -21,7 +21,6 @@
 
   const onAnswer = (value: Answer) => {
     ANSWERS[index] = value;
-    console.log(ANSWERS);
 
     if (index < ANSWERS.length - 1) {
       index++
