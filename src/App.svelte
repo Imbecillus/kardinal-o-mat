@@ -57,5 +57,9 @@
       border-color: var(--col-purple);
       opacity: .25;
     }
+
+    @media (max-width: 600px) {
+      font-size: 1rem;
+    }
   }
 </style>
