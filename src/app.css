@@ -1,5 +1,6 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
 
@@ -9,8 +10,10 @@
   -moz-osx-font-smoothing: grayscale;
 
   --col-black: #000;
-  --col-orange: #ffb600;
+  --col-purple: #310d20;
+  --col-red: #C82B2B;
   --col-white: #fff;
+  --col-yellow: #F2E86D;
 }
 
 a {
@@ -29,7 +32,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--col-orange);
+  background-color: var(--col-yellow);
 }
 
 h1 {
@@ -42,7 +45,7 @@ h1 {
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;

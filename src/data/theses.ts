@@ -42,6 +42,6 @@ export const THESES: Thesis[] = [
   },
   {
     heading: 'Verhalten der katholischen Kirche in Deutschland',
-    thesis: 'Der „synodale Weg“ der deutschen katholischen Kirche, bei dem als Reaktion auf sexuellen Missbrauch innerhalb der Kirche Forderungen zu umfassenden Reformen hinsichtlich Homosexualität, Zölibat und der Rolle von Frauen in der Kirche formuliert wurden, muss harsch kritisiert werden.'
+    thesis: 'Der „synodale Weg“ der deutschen katholischen Kirche, bei dem als Reaktion auf sexuellen Missbrauch innerhalb der Kirche umfangreiche Konferenzen mit Einbezug von Laien abgehalten wurden, muss harsch kritisiert werden.'
   }
 ];

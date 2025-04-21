@@ -27,6 +27,11 @@
 
 <style>
   main {
-    width: 1200px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: left;
   }
 </style>

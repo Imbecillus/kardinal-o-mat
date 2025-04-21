@@ -34,7 +34,7 @@
   </ul>
   <div>
     Um die Antworten zu vergleichen, klicken Sie bitte
-    <a href="https://collegeofcardinalsreport.com/where-they-stand/?_papabili=1">hier</a>.
+    <a href="https://collegeofcardinalsreport.com/where-they-stand/?_papabili=1" target="_blank">hier</a>.
   </div>
 </div>
 
@@ -42,5 +42,11 @@
   ul {
     list-style-type: none;
     max-width: 800px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+
+    padding-left: 0;
   }
 </style>

@@ -17,21 +17,35 @@
   <span class="name">
     Kardinal {cardinal?.name}
   </span>
-  <span class="position">
-    {cardinal?.position}
-  </span>
-  <span class="score">
-    {Intl.NumberFormat('de-DE', {
-      style: 'percent',
-      maximumFractionDigits: 1
-    }).format(score)}
-  </span>
+  <div class="subline">
+    <span class="position">
+      {cardinal?.position}
+    </span>
+    <span class="score">
+      {Intl.NumberFormat('de-DE', {
+        style: 'percent',
+        maximumFractionDigits: 1
+      }).format(score)}
+    </span>
+  </div>
+  <div class="score-bar">
+    <div 
+      class="score-bar-value" 
+      style={`width: ${score * 100}%`}
+    ></div>
+  </div>
 </li>
 
 <style>
   li {
     display: block;
-    position: relative;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .subline {
+    display: flex;
+    justify-content: space-between;
   }
 
   .name {
@@ -44,15 +58,19 @@
   }
 
   .position {
-    display: block;
     text-align: left;
 
     font-style: italic;
   }
 
-  .score {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  .score-bar {
+    width: 100%;
+    height: 15px;
+    background-color: var(--col-white);
+
+    .score-bar-value {
+      background-color: var(--col-purple);
+      height: 100%;
+    }
   }
 </style>
