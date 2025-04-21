@@ -15,7 +15,7 @@
 
   <div>
     <p>
-      <em>The College of Cardinals Report</em> hat die <a href="https://collegeofcardinalsreport.com/where-they-stand/?_papabili=1" target="_blank">
+      Der <em>College of Cardinals Report</em> hat die <a href="https://collegeofcardinalsreport.com/where-they-stand/?_papabili=1" target="_blank">
         Positionen der aussichtsreichsten Kardinäle für die nächste Papstwahl</a>
       zusammengetragen. Diese Webseite bereitet diese Positionen nach dem Vorbild des <a href="https://www.wahl-o-mat.de/" target="_blank">Wahl-O-Mat</a> auf.
     </p>
@@ -49,5 +49,9 @@
 
   p {
     text-align: left;
+
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+    }
   }
 </style>

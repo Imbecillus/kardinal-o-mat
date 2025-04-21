@@ -45,6 +45,10 @@
     h3 {
       margin: 0;
     }
+
+    @media (max-width: 600px) {
+      padding-bottom: 2.5rem;
+    }
   }
 
   .question-inner {
@@ -56,6 +60,10 @@
   }
 
   .answers {
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 
     button {
       min-width: 180px;
@@ -78,6 +86,17 @@
       }
     }
 
+    @media (max-width: 600px) {
+      flex-direction: column;
+
+      button {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        font-size: 1.5rem;
+      }
+    }
+
   }
 
   .skip-thesis {
@@ -95,6 +114,10 @@
 
     &:hover {
       text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 1.2rem;
     }
   }
 </style>

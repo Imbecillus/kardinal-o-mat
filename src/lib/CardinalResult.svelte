@@ -55,12 +55,20 @@
 
     font-size: 2rem;
     font-weight: bold;
+
+    @media (max-width: 600px) {
+      font-size: 2.5rem;
+    }
   }
 
   .position {
     text-align: left;
 
     font-style: italic;
+
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+    }
   }
 
   .score-bar {
@@ -69,7 +77,7 @@
     background-color: var(--col-white);
 
     .score-bar-value {
-      background-color: var(--col-purple);
+      background-color: var(--col-red);
       height: 100%;
     }
   }

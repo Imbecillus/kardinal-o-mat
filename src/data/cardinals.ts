@@ -18,7 +18,7 @@ const CARDINALS: Array<Cardinal> = [
   },
   {
     id: 'arborelius',
-    name: 'Anders Arborelius, O.C.D.',
+    name: 'Anders Arborelius',
     position: 'Bischof von Stockholm, Schweden',
     answers: [-1, undefined, -1, 1, 0, 1, 1, -1, 1, 1]
   },

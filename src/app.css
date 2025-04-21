@@ -50,3 +50,9 @@ h1 {
   padding: 2rem;
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 10px;
+  }
+}
