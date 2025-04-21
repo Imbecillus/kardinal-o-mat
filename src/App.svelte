@@ -25,6 +25,16 @@
   {/if}
 </main>
 
+<footer>
+  <hr>
+  <p>Danke an Skelethorb für die Idee. Er ist der Größte!</p>
+  <p>
+    <a href="https://collegeofcardinalsreport.com/where-they-stand" target="_blank">Datenquelle</a> |
+    <a href="https://github.com/Imbecillus/kardinal-o-mat" target="_blank">Github</a> |
+    <a href="mailto:kardinal-o-mat@imbecillus.de">Kontakt</a>
+  </p>
+</footer>
+
 <style>
   main {
     width: 100%;
@@ -33,5 +43,19 @@
   h1 {
     font-size: 4rem;
     text-align: left;
+  }
+
+  footer {
+    font-size: 0.6rem;
+    opacity: .7;
+
+    margin-top: 100px;
+
+    width: 100%;
+
+    hr {
+      border-color: var(--col-purple);
+      opacity: .25;
+    }
   }
 </style>
