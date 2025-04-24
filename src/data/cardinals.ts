@@ -71,6 +71,12 @@ const CARDINALS: Array<Cardinal> = [
     answers: [undefined, undefined, undefined, undefined, 0, 0, undefined, undefined, undefined, undefined]
   },
   {
+    id: 'hollerich',
+    name: 'Jean-Claude Hollerich',
+    position: 'Erzbischof von Luxemburg',
+    answers: [1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+  },
+  {
     id: 'koch',
     name: 'Kurt Koch',
     position: 'Präfekt des Dikasteriums zur Förderung der Einheit der Christen',
@@ -129,6 +135,12 @@ const CARDINALS: Array<Cardinal> = [
     name: 'Luis Antonio Gokim Tagle',
     position: 'Pro-Präfekt des Dikasteriums für Evangelisierung',
     answers: [-1, 0, 0, 0, 1, 1, 1, 1, 0, undefined]
+  },
+  {
+    id: 'turkson',
+    name: 'Peter Kodwo Appia Turkson',
+    position: 'Kanzler der pontifikalen Akademie der Wissenschaften und der Sozialwissenschaften',
+    answers: [-1, 0, 1, undefined, undefined, 0, 1, undefined, 0, undefined]
   },
   {
     id: 'mendonca',
