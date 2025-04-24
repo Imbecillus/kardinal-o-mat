@@ -1,15 +1,22 @@
 <script lang="ts">
-    import type { Answer } from "./types";
+  import { randomAdjective } from "./data/adjectives";
+  import type { Answer } from "./types";
   import Quiz from "./views/Quiz.svelte";
-    import Results from "./views/Results.svelte";
+  import Results from "./views/Results.svelte";
   import Start from "./views/Start.svelte";
+
+  const claim = `Das ${randomAdjective()} Original!`;
+  console.log(claim);
 
   let activeView: 'start' | 'quiz' | 'results' = $state('start');
   let answers: Answer[] = $state([]);
 </script>
 
 <main>
-  <h1>Kardinal-O-Mat</h1>
+  <h1>
+    Kardinal-O-Mat
+    <span class="claim">{claim}</span>
+  </h1>
 
   {#if activeView === 'start'}
     <Start onStart={() => {activeView = 'quiz'}}></Start>
@@ -38,11 +45,23 @@
 <style>
   main {
     width: 100%;
+    text-align: left;
   }
 
   h1 {
     font-size: 4rem;
     text-align: left;
+
+    position: relative;
+    display: inline-block;
+  }
+
+  .claim {
+    position: absolute;
+    display: block;
+    right: 0px;
+
+    font-size: 1.5rem;
   }
 
   footer {
