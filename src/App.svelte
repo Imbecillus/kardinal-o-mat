@@ -35,6 +35,7 @@
 <footer>
   <hr>
   <p>Danke an Skelethorb für die Idee. Er ist der Größte!</p>
+  <p>Danke auch an Nico für den Segen des SSL. Er ist ebenfalls sehr groß.</p>
   <p>
     <a href="https://collegeofcardinalsreport.com/where-they-stand" target="_blank">Datenquelle</a> |
     <a href="https://github.com/Imbecillus/kardinal-o-mat" target="_blank">Github</a> |
