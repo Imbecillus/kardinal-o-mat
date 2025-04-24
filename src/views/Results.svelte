@@ -31,8 +31,15 @@
     {/each}
   </ul>
   <div>
-    Um die Antworten zu vergleichen, klicken Sie bitte
-    <a href="https://collegeofcardinalsreport.com/where-they-stand/?_papabili=1" target="_blank">hier</a>.
+    <p>
+      Um die Antworten zu vergleichen, klicken Sie bitte
+      <a href="https://collegeofcardinalsreport.com/where-they-stand/?_papabili=1" target="_blank">hier</a>.
+    </p>
+    <p>
+      Für eine kritische Einordnung der Arbeit des <em>College of Cardinals Report</em> ist <a href="https://www.kirche-und-leben.de/artikel/konklave-papst-franziskus-nachfolger-kardinaele-kardinal-o-mat-internet-usa-hintergruende-kritik" target="_blank">
+        dieser Artikel
+      </a> der Zeitung <em>Kirche+Leben</em> zu empfehlen.
+    </p>
   </div>
 </div>
 

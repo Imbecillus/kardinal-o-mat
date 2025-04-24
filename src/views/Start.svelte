@@ -22,6 +22,11 @@
     <p>
       Der Kardinal-O-Mat ist keine Wahlempfehlung. Die Chancen stehen ohnehin nicht sehr gut, dass Sie wahlberechtigt sind. :(
     </p>
+    <p>
+      Für eine kritische Einordnung der Arbeit des <em>College of Cardinals Report</em> ist <a href="https://www.kirche-und-leben.de/artikel/konklave-papst-franziskus-nachfolger-kardinaele-kardinal-o-mat-internet-usa-hintergruende-kritik" target="_blank">
+        dieser Artikel
+      </a> der Zeitung <em>Kirche+Leben</em> zu empfehlen.
+    </p>
   </div>
 </div>
 
