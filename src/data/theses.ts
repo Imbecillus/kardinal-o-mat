@@ -14,7 +14,7 @@ export const THESES: Thesis[] = [
   },
   {
     heading: 'Zölibat',
-    thesis: 'Das priesterliche Zölibat soll optional und freiwillig werden.'
+    thesis: 'Der priesterliche Zölibat soll optional und freiwillig werden.'
   },
   {
     heading: 'Einschränkung des Vetus Ordo',
