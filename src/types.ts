@@ -24,3 +24,18 @@ export type CardinalId = 'besengu'
   | 'turkson'
   | 'mendonca'
   | 'zuppi';
+
+export enum ObscureFigureId {
+  BUDDHA = 'buddha',
+  DALAI_LAMA = 'dalai_lama',
+  BARBOSSA = 'barbossa',
+  CHARLES = 'charles',
+  NORRIS = 'norris',
+  SNOW = 'snow',
+  PALPATINE = 'palpatine',
+  SPARROW = 'sparrow',
+  SKELETHORB = 'skelethorb',
+  STROMBERG = 'stromberg',
+  BEYONCE = 'beyonce',
+  YODA = 'yoda'
+};

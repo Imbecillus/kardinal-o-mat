@@ -1,8 +1,8 @@
-import type { Answer, CardinalId } from '../types';
+import type { Answer, CardinalId, ObscureFigureId } from '../types';
 
 type AnswerArray = [Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer];
 
-interface Cardinal {
+export interface Cardinal {
   id: CardinalId;
   name: string;
   position: string;

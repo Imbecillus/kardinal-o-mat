@@ -1,5 +1,10 @@
 import { CARDINAL_MAP } from "./data/cardinals";
-import type { Answer, CardinalId } from "./types";
+import { OBSCURE_FIGURE_MAP } from "./data/obscureFigures";
+import { ObscureFigureId, type Answer, type CardinalId } from "./types";
+
+export const isCardinal = (id: CardinalId | ObscureFigureId): id is CardinalId => {
+  return !Object.values(ObscureFigureId).includes(id as ObscureFigureId);
+}
 
 /**
  * Returns a number between 0 and 1 reflecting the difference between the
@@ -7,9 +12,11 @@ import type { Answer, CardinalId } from "./types";
  * 
  * If one or both have not answered a question, it is skipped.
  */
-export const calculateSimilarityScore = (userAnswers: Answer[], cardinalId: CardinalId): number => {
+export const calculateSimilarityScore = (userAnswers: Answer[], cardinalId: CardinalId|ObscureFigureId): number => {
 
-  const cardinalAnswers = CARDINAL_MAP.get(cardinalId)?.answers;
+  const cardinalAnswers = isCardinal(cardinalId)
+    ? CARDINAL_MAP.get(cardinalId)?.answers
+    : OBSCURE_FIGURE_MAP.get(cardinalId)?.answers;
 
   if (!userAnswers?.length || !cardinalAnswers?.length) {
     console.error(`No answers for ${cardinalId}`);

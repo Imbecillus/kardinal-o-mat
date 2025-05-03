@@ -1,6 +1,7 @@
 <script lang="ts">
   import { randomAdjective } from "./data/adjectives";
   import type { Answer } from "./types";
+    import PreResults from "./views/PreResults.svelte";
   import Quiz from "./views/Quiz.svelte";
   import Results from "./views/Results.svelte";
   import Start from "./views/Start.svelte";
@@ -8,8 +9,9 @@
   const claim = `Das ${randomAdjective()} Original!`;
   console.log(claim);
 
-  let activeView: 'start' | 'quiz' | 'results' = $state('start');
+  let activeView: 'start' | 'quiz' | 'pre_results' | 'results' = $state('start');
   let answers: Answer[] = $state([]);
+  let showObscureFigures: boolean = $state(false);
 </script>
 
 <main>
@@ -23,10 +25,18 @@
   {:else if activeView === 'quiz'}
     <Quiz onFinished={(quizAnswers: Answer[]) => {
       answers = quizAnswers;
-      activeView = 'results';
+      activeView = 'pre_results';
     }}></Quiz>
+  {:else if activeView === 'pre_results'}
+    <PreResults onContinue={(selection: boolean) => {
+      console.log(selection);
+      showObscureFigures = selection;
+      activeView = 'results';
+    }}
+    ></PreResults>
   {:else if activeView === 'results'}
     <Results
+      showObscureFigures={showObscureFigures}
       userAnswers={answers}
     ></Results>
   {/if}

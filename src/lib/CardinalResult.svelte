@@ -1,21 +1,30 @@
 <script lang="ts">
   import { CARDINAL_MAP } from "../data/cardinals";
-  import type { CardinalId } from "../types";
+  import { OBSCURE_FIGURE_MAP } from "../data/obscureFigures";
+  import { isCardinal } from "../scoring";
+  import type { CardinalId, ObscureFigureId } from "../types";
 
   type Props = {
-    cardinal: CardinalId;
+    cardinal: CardinalId|ObscureFigureId;
     score: number;
   }
 
   const {cardinal: cardinalId, score}: Props = $props();
 
-  const cardinal = $derived(CARDINAL_MAP.get(cardinalId));
+  const isActualCardinal = $derived(isCardinal(cardinalId));
+
+  const cardinal = $derived(
+    isCardinal(cardinalId)
+      ? CARDINAL_MAP.get(cardinalId)
+      : OBSCURE_FIGURE_MAP.get(cardinalId)
+  );
 
 </script>
 
 <li>
   <span class="name">
-    Kardinal {cardinal?.name}
+    {isActualCardinal ? 'Kardinal' : ''}
+    {cardinal?.name}
   </span>
   <div class="subline">
     <span class="position">
