@@ -15,8 +15,8 @@
 
   <div>
     <p>
-      Der <em>College of Cardinals Report</em> hat die <a href="https://collegeofcardinalsreport.com/where-they-stand/?_papabili=1" target="_blank">
-        Positionen der aussichtsreichsten Kardinäle für die nächste Papstwahl</a>
+      Der <em>College of Cardinals Report</em> hatte die <a href="https://collegeofcardinalsreport.com/where-they-stand/?_papabili=1" target="_blank">
+        Positionen der (laut eigener Einschätzung) aussichtsreichsten Kardinäle für die Wahl des 267. Papstes</a>
       zusammengetragen. Diese Webseite bereitet diese Positionen nach dem Vorbild des <a href="https://www.wahl-o-mat.de/" target="_blank">Wahl-O-Mat</a> auf.
     </p>
     <p>
