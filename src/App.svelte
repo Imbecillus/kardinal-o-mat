@@ -1,7 +1,8 @@
 <script lang="ts">
   import { randomAdjective } from "./data/adjectives";
+  import WhiteSmoke from "./lib/WhiteSmoke.svelte";
   import type { Answer } from "./types";
-    import PreResults from "./views/PreResults.svelte";
+  import PreResults from "./views/PreResults.svelte";
   import Quiz from "./views/Quiz.svelte";
   import Results from "./views/Results.svelte";
   import Start from "./views/Start.svelte";
@@ -18,6 +19,7 @@
   <h1>
     Kardinal-O-Mat
     <span class="claim">{claim}</span>
+    <WhiteSmoke></WhiteSmoke>
   </h1>
 
   {#if activeView === 'start'}
