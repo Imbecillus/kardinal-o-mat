@@ -19,12 +19,6 @@ const OBSCURE_FIGURES: Array<ObscureFigure> = [
     position: 'Kapitän der Black Pearl und Lord des Rats der Bruderschaft'
   },
   {
-    id: ObscureFigureId.BUDDHA,
-    answers: [1, 1, 1, undefined, -1, 1, 1, 0, 1, -1],
-    name: 'Siddhartha Gautama',
-    position: 'Der Buddha'
-  },
-  {
     id: ObscureFigureId.CHARLES,
     answers: [1, 0, 0, undefined, undefined, 1, 1, 1, 1, undefined],
     name: 'Charles III.',

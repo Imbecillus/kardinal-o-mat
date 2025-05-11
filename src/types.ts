@@ -27,7 +27,6 @@ export type CardinalId = 'besengu'
   | 'zuppi';
 
 export enum ObscureFigureId {
-  BUDDHA = 'buddha',
   DALAI_LAMA = 'dalai_lama',
   BARBOSSA = 'barbossa',
   CHARLES = 'charles',
