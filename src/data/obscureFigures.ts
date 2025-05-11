@@ -73,6 +73,12 @@ const OBSCURE_FIGURES: Array<ObscureFigure> = [
     position: 'Leiter der Schadensregulierung M-Z'
   },
   {
+    id: ObscureFigureId.SULYVAHN,
+    answers: [1, 1, undefined, undefined, undefined, -1, 0, undefined, 0, 1],
+    name: 'Pontiff Sulyvahn',
+    position: 'Selbsternannter Pontifex des Way of White, Regent von Irithyll des Borealen Tals'
+  },
+  {
     id: ObscureFigureId.YODA,
     answers: [1, undefined, -1, 1, -1, 0, 1, undefined, undefined, undefined],
     name: 'Yoda',

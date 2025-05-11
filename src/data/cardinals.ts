@@ -113,6 +113,12 @@ const CARDINALS: Array<Cardinal> = [
     answers: [-1, undefined, undefined, -1, undefined, 0, 0, undefined, undefined, 1]
   },
   {
+    id: 'prevost',
+    name: 'Francis Prevost (Papst Leo XIV.)',
+    position: 'Papst, Bischof von Rom, Oberhaupt der römisch-katholischen Kirche und Souverän des Vatikanstaats; emeritierter Präfekt des Dikasteriums für die Bischöfe',
+    answers: [-1, 0, undefined, undefined, undefined, 1, 1, undefined, undefined, undefined]
+  },
+  {
     id: 'don',
     name: 'Albert Malcolm Ranjith Patabendige Don',
     position: 'Erzbischof von Colombo, Sri Lanka',

@@ -17,6 +17,7 @@ export type CardinalId = 'besengu'
   | 'parolin'
   | 'piacenza'
   | 'pizzaballa'
+  | 'prevost'
   | 'don'
   | 'sarah'
   | 'sturla'
@@ -36,6 +37,7 @@ export enum ObscureFigureId {
   SPARROW = 'sparrow',
   SKELETHORB = 'skelethorb',
   STROMBERG = 'stromberg',
+  SULYVAHN = 'sulyvahn',
   BEYONCE = 'beyonce',
   YODA = 'yoda'
 };

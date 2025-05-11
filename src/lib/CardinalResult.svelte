@@ -19,9 +19,15 @@
       : OBSCURE_FIGURE_MAP.get(cardinalId)
   );
 
+  const listItemClass = $derived(
+    cardinalId === 'prevost'
+      ? 'pope'
+      : 'cardinal'
+  )
+
 </script>
 
-<li>
+<li class={listItemClass}>
   <span class="name">
     {isActualCardinal ? 'Kardinal' : ''}
     {cardinal?.name}
@@ -89,6 +95,12 @@
     .score-bar-value {
       background-color: var(--col-red);
       height: 100%;
+    }
+  }
+
+  .pope {
+    .score-bar-value {
+      background-color: var(--col-gold);
     }
   }
 </style>
